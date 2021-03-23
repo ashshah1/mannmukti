@@ -4,7 +4,7 @@ building a website for the ucla chapter of mannmukti, mostly an excuse for megan
 
 also, ash is friends with mannmukti president so this, along with driving her everywhere, is part of the job description. 
 
-megan is along for the ride, as usual, as ash's minion.
+megan is along for the ride as ash's minion.
 
 # built using
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
