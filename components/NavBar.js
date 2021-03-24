@@ -7,9 +7,10 @@ export default function NavBar() {
         <div className={styles.navbar}>
 
             <div className={styles.dropdown}>
+            <div className={styles["drop-container"]}>
                 <button className={styles.dropbtn}>What We Do
                 </button>
-                <div>
+                
                 <div className={styles["dropdown-content"]}>
                     <Link href="/about/collaborations">
                         <a>Collaborations</a>
@@ -25,9 +26,10 @@ export default function NavBar() {
                     </Link>
                 </div>
                 </div>
+                <div className={styles["drop-container"]}>
                 <button className={styles.dropbtn}>Info
                 </button>
-                <div>
+                
                 <div className={styles["dropdown-content"]}>
                     <Link href="/info/resources">
                         <a>Resources</a>
@@ -43,9 +45,10 @@ export default function NavBar() {
                     </Link>
                 </div>
                 </div>
+                <div className={styles["drop-container"]}>
                 <button className={styles.dropbtn}>The Issue
                 </button>
-                <div>
+                
                 <div className={styles["dropdown-content"]}>
                     <Link href="/issue/issue">
                         <a>At a Glance</a>
@@ -55,14 +58,15 @@ export default function NavBar() {
                     </Link>
                 </div>
                 </div>
+                <div className={styles["drop-container"]}>
                 <button className={styles.dropbtn}>Contact
                 </button>
-                <div>
+               
                 <div className={styles["dropdown-content"]}>
-                    <Link href="/contact/Instagram">
+                    <Link href="/reach/instagram">
                         <a>Social Media</a>
                     </Link>
-                    <Link href="/contact/contact">
+                    <Link href="/reach/contact">
                         <a>Contact Us</a>
                     </Link>
                 </div>

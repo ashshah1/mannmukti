@@ -49,8 +49,8 @@ export default function Home(props) {
       </div>
       <NavBar></NavBar>
       <div className={styles.bgText}>
-        <h1>MANN MUKTI</h1>
-        <h2>AT UCLA</h2>
+        <h1 className={styles.topHead}>Mann Mukti</h1>
+        <h2 className={styles.subHead}>AT UCLA</h2>
       </div>
       <main className={styles.main}>
         <div className={styles["intro-paragraphs"]}>

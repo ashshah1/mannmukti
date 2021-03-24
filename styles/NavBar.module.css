@@ -30,24 +30,22 @@
     margin: 0; /* Important for vertical align on mobile phones */
   }
   
-  /* Add a red background color to navbar links on hover 
+  /* Add a white background color and change text color of navbar links on hover  */
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  } */
+    background-color:white;
+    color: #A77B77;
+  } 
   
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
     position: relative;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -63,4 +61,9 @@
   .dropdown:hover .dropdown-content {
     display: flex;
     flex-direction: column;
+  }
+
+  .drop-container {
+      display: flex;
+      flex-direction: column;
   }
