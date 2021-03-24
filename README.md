@@ -9,6 +9,10 @@ megan is along for the ride as ash's minion.
 # built using
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# citations
+
+vector maps from [here](https://freevectormaps.com/united-states/US-EPS-02-7001?ref=atr) and [here](https://freevectormaps.com/united-states/california/US-CA-EPS-02-7001?ref=atr)
+
 ## Getting Started
 
 First, run the development server:
