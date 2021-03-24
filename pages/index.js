@@ -1,65 +1,88 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+const GSheetReader = require('g-sheets-api');
+import NavBar from '../components/NavBar.js'
 
-export default function Home() {
+
+export default function Home(props) {
+  console.log(props.res);
+  let introParagraphs = props.res
+    .filter(function(result) {
+      return result.type == "paragraph";
+    })
+    .map(function(para) {
+      return <p>{para.text}</p>
+    });
+
+    let stats = props.res
+    .filter(function(result) {
+      return result.type == "stat";
+    })
+    .map(function(stat, index) {
+      return (
+        <div className={styles["stat-container"]}>
+          <p className={styles["stat-num"]}>{index + 1}</p>
+          <p className={styles["stat-text"]}>{stat.text}</p>
+        </div>
+      )
+    });
+
+  
+  // todo: replace favicon
   return (
     <div className={styles.container}>
+      
       <Head>
-        <title>Create Next App</title>
+        <title>Mann Mukti</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <div className={styles.bgWrap}>
+      <Image
+        src="/images/background.png" 
+        alt="illustrated image of faceless people"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        // className={styles.background}
+      />
+      </div>
+      <NavBar></NavBar>
+      <div className={styles.bgText}>
+        <h1>MANN MUKTI</h1>
+        <h2>AT UCLA</h2>
+      </div>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles["intro-paragraphs"]}>
+          {introParagraphs}
+        </div>
+        <div className={styles.stats}>
+          {stats}
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const options = {
+    sheetId: '1t8GrOu__5dAX3_qFDjVZ7SoK9TVVSEXo1kPDjRrxLWo',
+    sheetNumber: 1,
+    returnAllResults: false
+  }
+  
+  let res;
+  await GSheetReader(
+    options,
+    results => {
+      res = results;
+    },
+    error => {
+      console.log(error)
+    });
+  return {
+    props: {
+      res
+    }
+  }
 }
