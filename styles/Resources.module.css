@@ -1,0 +1,55 @@
+.full-page {
+    background-color: #f9f9f9;
+}
+.splash {
+    color: #66676D;
+    height: 100vh;
+    width: 100vw;
+    font-weight: 700;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.resources {
+    border: 1px solid black;
+    margin: 5vw 5vw 5vw 3vw;
+    padding: 2rem;
+}
+
+.headers {
+    font-weight: 700;
+    font-size: 4vw;
+    padding: 3vw;
+}
+.number {
+    color: #CB6464;
+    font-size: 4vw;
+}
+.splash-border {
+    padding: 50px;
+    border: 2px solid black;
+    margin: 5rem;
+}
+
+.section-header {
+    letter-spacing: 0.08em;
+    color: #A77B77;
+    text-align: center;
+}
+
+.sa-nationwide, .sa-socal {
+    display: flex;
+    flex-direction: row;
+}
+
+.images {
+    height: 20vw;
+    width: auto;
+    margin-top: 5vw;
+}
+
+.places {
+    text-align: center;
+    font-size: 2vw;
+    margin: 1vw;
+}
