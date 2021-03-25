@@ -6,7 +6,6 @@
   /* Links inside the navbar */
   .navbar a {
     font-size: 16px;
-    color: white;
     text-align: center;
     padding: 14px 16px;
   }
@@ -23,7 +22,6 @@
     font-size: 16px;
     border: none;
     outline: none;
-    color: white;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
@@ -31,7 +29,7 @@
   }
   
   /* Add a white background color and change text color of navbar links on hover  */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .navbar a:hover, .dropdown:hover .dropbtn:hover {
     background-color:white;
     color: #A77B77;
   } 
@@ -47,7 +45,7 @@
   /* Links inside the dropdown */
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 12px 16px; 
     text-decoration: none;
     text-align: left;
   }

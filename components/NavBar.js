@@ -1,14 +1,24 @@
 import Link from 'next/link'
 import styles from '../styles/NavBar.module.css'
-
+import { useRouter } from 'next/router';
 
 export default function NavBar() {
+    const router = useRouter();
+
+
+    console.log(router.pathname);
+
+    const styling = {
+        color: router.pathname === "/info/resources" ? '#A77B77' : 'white'
+    }
+
+
     return (
-        <div className={styles.navbar}>
+        <div className={styles.navbar} style={styling}>
 
             <div className={styles.dropdown}>
             <div className={styles["drop-container"]}>
-                <button className={styles.dropbtn}>What We Do
+                <button className={styles.dropbtn} style={styling}>What We Do
                 </button>
                 
                 <div className={styles["dropdown-content"]}>
@@ -27,7 +37,7 @@ export default function NavBar() {
                 </div>
                 </div>
                 <div className={styles["drop-container"]}>
-                <button className={styles.dropbtn}>Info
+                <button className={styles.dropbtn} style={styling}>Info
                 </button>
                 
                 <div className={styles["dropdown-content"]}>
@@ -46,7 +56,7 @@ export default function NavBar() {
                 </div>
                 </div>
                 <div className={styles["drop-container"]}>
-                <button className={styles.dropbtn}>The Issue
+                <button className={styles.dropbtn} style={styling}>The Issue
                 </button>
                 
                 <div className={styles["dropdown-content"]}>
@@ -59,7 +69,7 @@ export default function NavBar() {
                 </div>
                 </div>
                 <div className={styles["drop-container"]}>
-                <button className={styles.dropbtn}>Contact
+                <button className={styles.dropbtn} style={styling}>Contact
                 </button>
                
                 <div className={styles["dropdown-content"]}>
