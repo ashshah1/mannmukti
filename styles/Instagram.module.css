@@ -1,0 +1,51 @@
+.intro-container {
+    margin: auto;
+    width: 70%;
+}
+
+.title {
+    color: #A37666;
+    text-align: center;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 0;
+
+}
+
+.subtitle {
+    text-align: center;
+    color: #D4BBB3;
+    font-size: 2vw;
+    font-weight: 700;
+    font-style: italic;
+    margin: 1vw;
+    letter-spacing: 0;
+}
+
+.paragraph {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5vw;
+    line-height: 37px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 1vw;
+}
+
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+}
+
+.post-link {
+    margin: .75vw;
+}
+
+.post-image {
+    width: 25vw;
+}

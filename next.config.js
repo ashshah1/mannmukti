@@ -14,5 +14,8 @@ module.exports = {
         LANDING_INDEX: process.env.LANDING_INDEX,
         REPORTS_INDEX: process.env.REPORTS_INDEX,
         RESOURCES_INDEX: process.env.RESOURCES_INDEX
-    }
+    },
+    images: {
+        domains: ['scontent-sea1-1.cdninstagram.com'],
+    },
 };
