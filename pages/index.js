@@ -66,7 +66,7 @@ export default function Home(props) {
 export async function getStaticProps() {
   const options = {
     sheetId: '1t8GrOu__5dAX3_qFDjVZ7SoK9TVVSEXo1kPDjRrxLWo',
-    sheetNumber: 12,
+    sheetNumber: parseInt(process.env.LANDING_INDEX),
     returnAllResults: false
   }
   

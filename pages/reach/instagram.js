@@ -1,10 +1,10 @@
 const GSheetReader = require('g-sheets-api');
 
 export default function Instagram(props) {
-  console.log(props);
-  let posts = props.posts.map(post => {
+  console.log(parseInt(process.env.INSTAGRAM_PHOTOS_INDEX));
+  let posts = props.posts.map((post, i) => {
     return (
-      <a href={post.url} target="_blank">
+      <a key={i} href={post.url} target="_blank">
         <img src={post.src} />
       </a>
     )
@@ -20,7 +20,7 @@ export default function Instagram(props) {
 export async function getStaticProps() {
   const options = {
     sheetId: '1t8GrOu__5dAX3_qFDjVZ7SoK9TVVSEXo1kPDjRrxLWo',
-    sheetNumber: 10,
+    sheetNumber: parseInt(process.env.INSTAGRAM_PHOTOS_INDEX),
     returnAllResults: false
   };
 
