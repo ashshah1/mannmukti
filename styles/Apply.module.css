@@ -29,12 +29,12 @@
 }
 
 .form-container {
-    margin: auto;
     width: 70%;
+    margin: auto;
+    padding-bottom: 3vh;
 }
 
 .form-container iframe {
     width: 70vw;
-    height: 80vh;
-    overflow: hidden;
+    height: 70vh;
 }
