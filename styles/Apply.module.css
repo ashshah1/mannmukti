@@ -1,0 +1,40 @@
+.body {
+    background-color: #EFEAE8;
+    height: 100vw;
+}
+
+.intro-container {
+    margin: auto;
+    width: 70%;
+}
+
+.title {
+    color: #A37666;
+    text-align: center;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 0;
+
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.75vw;
+    letter-spacing: 0;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.form-container {
+    margin: auto;
+    width: 70%;
+    /*overflow: hidden;*/
+}
+
+.form-container iframe {
+    width: 70vw;
+    height: 80vw;
+}

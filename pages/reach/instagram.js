@@ -18,8 +18,8 @@ export default function Instagram(props) {
 
   let pageText = props.pageText.map((info, i) => {
     return (
-        <p className={styles[info.type]}>{info.text}</p>
-     )
+      <p className={styles[info.type]}>{info.text}</p>
+    )
     });
     
   return (
