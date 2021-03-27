@@ -1,39 +1,41 @@
-// import InstagramReader from 'instagram-web-api';
-// import styles from '../styles/Home.module.css'
-
+const GSheetReader = require('g-sheets-api');
 
 export default function Instagram(props) {
   console.log(props);
-  // let posts = props.posts.map(({ node }, i) => {
-  //     return (
-  //       <li key={i}>
-  //         <img src={node.display_resources[0].src} />
-  //         <p>{node.edge_media_to_caption.edges[0]?.node.text}</p>
-  //       </li>
-  //     )
-  //   })
+  let posts = props.posts.map(post => {
+    return (
+      <a href={post.url} target="_blank">
+        <img src={post.src} />
+      </a>
+    )
+  })
     
   return (
     <div>
-      hi
+      {posts}
     </div>
   )
 }
 
 export async function getStaticProps() {
-  // const { username, password } = process.env;
-  // const client = new InstagramReader({ username, password });
-  // // const client = new Instagram({ username: 'mannmukti'});
-  // await client.login();
-  
-  // const response = await client.getPhotosByUsername({
-  //   username: 'mannmukti',
-  // });
+  const options = {
+    sheetId: '1t8GrOu__5dAX3_qFDjVZ7SoK9TVVSEXo1kPDjRrxLWo',
+    sheetNumber: 10,
+    returnAllResults: false
+  };
 
-  let test = "hi";
+  let res;
+  await GSheetReader(
+      options,
+      results => {
+        res = results;
+      },
+      error => {
+        console.log(error)
+      });
   return {
     props: {
-      posts: test
+      posts: res
     }
-  };
+  }
 }

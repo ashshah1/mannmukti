@@ -85,7 +85,7 @@ export default function Resources(props) {
 export async function getStaticProps() {
     const options = {
       sheetId: '1t8GrOu__5dAX3_qFDjVZ7SoK9TVVSEXo1kPDjRrxLWo',
-      sheetNumber: 5,
+      sheetNumber: 14,
       returnAllResults: false
     }
     

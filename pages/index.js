@@ -6,10 +6,9 @@ import NavBar from '../components/NavBar.js'
 
 
 export default function Home(props) {
-  console.log(props.res);
   let introParagraphs = props.res
     .filter(function(result) {
-      return result.type == "paragraph";
+      return result.type === "paragraph";
     })
     .map(function(para) {
       return <p>{para.text}</p>
@@ -17,7 +16,7 @@ export default function Home(props) {
 
     let stats = props.res
     .filter(function(result) {
-      return result.type == "stat";
+      return result.type === "stat";
     })
     .map(function(stat, index) {
       return (
@@ -67,7 +66,7 @@ export default function Home(props) {
 export async function getStaticProps() {
   const options = {
     sheetId: '1t8GrOu__5dAX3_qFDjVZ7SoK9TVVSEXo1kPDjRrxLWo',
-    sheetNumber: 1,
+    sheetNumber: 12,
     returnAllResults: false
   }
   
