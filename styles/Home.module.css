@@ -41,15 +41,15 @@
 }
 
 .intro-paragraphs {
-  margin-top: 7vw;
+  margin-top: 7vh;
   color: black;
   font-size: 2vw;
-  line-height: 2.2vw;
+  line-height: 2.2vh;
 }
 
 .stats {
   color: black;
-  font-size: 1.25vw;
+  font-size: 1.25vh;
   line-height: 30px;
 }
 
