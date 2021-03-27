@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar";
 import styles from "../../styles/Instagram.module.css"
 import Image from "next/dist/client/image";
+import Head from "next/dist/next-server/lib/head";
 
 const GSheetReader = require('g-sheets-api');
 
@@ -23,6 +24,10 @@ export default function Instagram(props) {
     
   return (
     <div>
+      <Head>
+        <title>Mann Mukti | Instagram</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <NavBar/>
         <div className={styles["intro-container"]}>
             {pageText}
