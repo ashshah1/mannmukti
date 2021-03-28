@@ -44,13 +44,13 @@
   margin-top: 7vh;
   color: black;
   font-size: 2vw;
-  line-height: 2.2vh;
+  line-height: 4vh;
 }
 
 .stats {
   color: black;
-  font-size: 1.25vh;
-  line-height: 30px;
+  font-size: 2vh;
+  line-height: 4vh;
 }
 
 .stat-container {
