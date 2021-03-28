@@ -4,10 +4,9 @@ const GSheetReader = require('g-sheets-api');
 import NavBar from '../components/NavBar.js'
 import Head from "next/dist/next-server/lib/head";
 
-
-
 export default function Apply(props) {
   console.log(props);
+  // get page text
   let pageText = props.pageText
     .filter(function(result) {
       return result.type !== "form";
@@ -18,6 +17,7 @@ export default function Apply(props) {
       )
     });
 
+  // get form(s) to embed
   let form = props.pageText
     .filter(function(result) {
       return result.type === "form";
@@ -35,7 +35,7 @@ export default function Apply(props) {
     });
 
   return (
-    <div className={styles.body}>
+    <div className={styles["full-page"]}>
       <Head>
         <title>Mann Mukti | Apply</title>
         <link rel="icon" href="/favicon.ico" />
