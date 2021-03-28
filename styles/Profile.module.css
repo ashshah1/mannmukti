@@ -1,0 +1,41 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20vw;
+}
+
+.profile > * {
+  margin: .5vw;
+}
+
+/* .profile > * {
+  margin: auto;
+} */
+.profile-pic img {
+  /* margin: auto; */
+  border-radius: 50%;
+}
+
+.name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.position {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 2.25vh;
+  text-transform: uppercase;
+}
+
+.bio {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.25vh;
+  line-height: 3.5vh;
+  /* text-align: center; */
+}
