@@ -6,6 +6,7 @@ export default function Contact() {
     return (
         <div className={styles["full-page"]}>
             <NavBar></NavBar>
+            <h1>CONTACT US</h1>
         </div>
         
     )
