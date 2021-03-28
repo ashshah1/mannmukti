@@ -16,6 +16,6 @@ module.exports = {
         RESOURCES_INDEX: process.env.RESOURCES_INDEX
     },
     images: {
-        domains: ['scontent-sea1-1.cdninstagram.com'],
+        domains: ['scontent-sea1-1.cdninstagram.com', 'drive.google.com'],
     },
 };
