@@ -1,5 +1,11 @@
+import NavBar from '../../components/NavBar.js'
+
+
 export default function Team() {
     return (
-        <h1>sup</h1>
+        <div>
+            <NavBar></NavBar>
+        </div>
+        
     )
 }
