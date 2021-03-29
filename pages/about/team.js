@@ -1,7 +1,7 @@
 import NavBar from '../../components/NavBar.js'
 import Profile from '../../components/Profile.js'
 import Head from 'next/head'
-import styles from '../../styles/team.module.css'
+import styles from '../../styles/Team.module.css'
 const GSheetReader = require('g-sheets-api');
 
 export default function Team(props) {
