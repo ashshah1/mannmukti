@@ -6,108 +6,137 @@
 
 
 /* Handle navbar coloring for both themes*/  
-.navbar {
+.navbar, .navbar-dark {
   overflow: hidden;
+  width: 100%;
+  height: 47px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
   color: white;
+  background-color: #A77B77;
 }
 
 .navbar-dark {
-  overflow: hidden;
   color: #A77B77;
+  background-color: white;
+}
+
+#left {
+  left: 0px;
+  top: 0;
+  position: fixed;
+  float: left;
+}
+
+#right {
+  right: 0px;
+  top: 0;
+  position: fixed;
+  float: right;
+}
+
+/* Links inside the navbar */
+.navbar a, .navbar-dark a {
+  font-size: 16px;
+  text-align: center;
+  padding: 14px 16px;
+  display: block;
 }
 
 
-  
-  /* Links inside the navbar */
-  .navbar a, .navbar-dark a {
-    font-size: 16px;
-    text-align: center;
-    padding: 14px 16px;
-  }
+/* The dropdown container */
+.dropdown {
+  display: flex;
+  flex-direction: row;
+}
 
-  
-  /* The dropdown container */
-  .dropdown {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn, .dropdown .dropbtn-dark {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-  }
+/* Dropdown button */
+.dropdown .dropbtn, .dropdown .dropbtn-dark {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  text-align: left;
+}
 
-  .dropbtn {
-    color: white;
-  }
+.dropbtn {
+  color: white;
+}
 
-  .dropbtn-dark {
-    color: #A77B77;
-  }
-  
-  /* Add a white background color and change text color of navbar links on hover  */
-  .navbar a:hover, .dropdown:hover .dropbtn:hover {
-    background-color:white;
-    color: #A77B77;
-  } 
+.dropbtn-dark {
+  color: #A77B77;
+}
 
-  .dropbtn-dark:hover {
-    background-color: #A77B77;
-    color: white;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content, .dropdown-content-dark {
-    display: none;
-    position: relative;
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a, .dropdown-content-dark a {
-    padding: 12px 16px; 
-    text-decoration: none;
-    text-align: left;
-  }
+/* Add a white background color and change text color of navbar links on hover  */
+.dropdown a:hover, .dropdown:hover .dropbtn:hover {
+  background-color:white;
+  color: #A77B77;
+} 
 
-  .dropdown-content {
-    background-color: #f9f9f9;
+.navbar-dark .dropdown a:hover {
+  background-color: #A77B77;
+  color:white;
+}
 
-  }
-  .dropdown-content a {
-    color: black;
-  }
-  
-  .dropdown-content-dark {
-    background-color: #A77B77;
-  }
+.dropbtn-dark:hover {
+  background-color: #A77B77;
+  color: white;
+}
 
-  .dropdown-content-dark a {
-    color: white;
-  }
+/* Dropdown content (hidden by default) */
+.dropdown-content, .dropdown-content-dark {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a, .dropdown-content-dark a {
+  float:none;
+  display:block;
+  position: relative;
+}
 
 
 
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content-dark a:hover {
-    background-color: #D4BBB3;
-  }
+/* Links inside the dropdown */
+.dropdown-content a, .dropdown-content-dark a {
+  padding: 12px 16px; 
+  text-decoration: none;
+  text-align: left;
+}
 
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content-dark {
-    display: flex;
-    flex-direction: column;
-  }
+.dropdown-content {
+  background-color: #f9f9f9;
 
-  .drop-container {
-      display: flex;
-      flex-direction: column;
-  }
+}
+.dropdown-content a {
+  color: black;
+}
+
+.dropdown-content-dark {
+  background-color: #A77B77;
+}
+
+.dropdown-content-dark a {
+  color: white;
+}
+
+
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content-dark a:hover {
+  background-color: #D4BBB3;
+}
+
+
+/* Show the dropdown menu on hover */
+.drop-container:hover .dropdown-content, .drop-container:hover .dropdown-content-dark {
+  display: block;
+}
