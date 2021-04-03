@@ -42,6 +42,7 @@
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
+    text-align: left;
   }
 
   .dropbtn {
@@ -65,10 +66,20 @@
   
   /* Dropdown content (hidden by default) */
   .dropdown-content, .dropdown-content-dark {
+    /* display: flex; */
+    /* flex-direction: column; */
     display: none;
-    position: relative;
+    position: absolute;
     z-index: 1;
   }
+
+  .dropdown-content a, .dropdown-content-dark a {
+    float:none;
+    display:block;
+    position: relative;
+  }
+
+  
   
   /* Links inside the dropdown */
   .dropdown-content a, .dropdown-content-dark a {
@@ -102,12 +113,13 @@
 
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content-dark {
-    display: flex;
-    flex-direction: column;
+  .drop-container:hover .dropdown-content, .drop-container:hover .dropdown-content-dark {
+    /* display: list-item; */
+    /* flex-direction: column; */
+    display: inherit;
   }
 
   .drop-container {
-      display: flex;
-      flex-direction: column;
+      /* display: flex;  */
+      /* flex-direction: column; */
   }
