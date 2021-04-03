@@ -91,7 +91,6 @@ export default function NavBar() {
                         <a>Join Us</a>
                     </Link>
                 </div>
-                
         </div>
 
     )
