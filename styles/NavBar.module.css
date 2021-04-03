@@ -6,13 +6,18 @@
 
 
 /* Handle navbar coloring for both themes*/  
-.navbar {
+.navbar, .navbar-dark {
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar {
   color: white;
 }
 
 .navbar-dark {
-  overflow: hidden;
   color: #A77B77;
 }
 
@@ -23,14 +28,16 @@
     font-size: 16px;
     text-align: center;
     padding: 14px 16px;
+    display: block;
   }
 
   
   /* The dropdown container */
   .dropdown {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-direction: row;
+    float: right;
   }
   
   /* Dropdown button */
@@ -54,10 +61,15 @@
   }
   
   /* Add a white background color and change text color of navbar links on hover  */
-  .navbar a:hover, .dropdown:hover .dropbtn:hover {
+  .dropdown a:hover, .dropdown:hover .dropbtn:hover {
     background-color:white;
     color: #A77B77;
   } 
+
+  .navbar-dark .dropdown a:hover {
+    background-color: #A77B77;
+    color:white;
+  }
 
   .dropbtn-dark:hover {
     background-color: #A77B77;
