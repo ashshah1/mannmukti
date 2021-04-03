@@ -8,9 +8,11 @@
 /* Handle navbar coloring for both themes*/  
 .navbar, .navbar-dark {
   overflow: hidden;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-between; */
+  top: 0;
+  position: fixed;
 }
 
 .navbar {
@@ -19,6 +21,21 @@
 
 .navbar-dark {
   color: #A77B77;
+}
+
+#left {
+  left: 0px;
+  top: 0;
+  position: fixed;
+  /* float: left; */
+}
+
+#right {
+  right: 0px;
+  top: 0;
+  position: fixed;
+  /* float: right; */
+  /* right: 0px; */
 }
 
 
@@ -37,7 +54,7 @@
     /* position: fixed; */
     display: flex;
     flex-direction: row;
-    float: right;
+    /* float: right; */
   }
   
   /* Dropdown button */
@@ -78,8 +95,6 @@
   
   /* Dropdown content (hidden by default) */
   .dropdown-content, .dropdown-content-dark {
-    /* display: flex; */
-    /* flex-direction: column; */
     display: none;
     position: absolute;
     z-index: 1;
@@ -126,12 +141,10 @@
   
   /* Show the dropdown menu on hover */
   .drop-container:hover .dropdown-content, .drop-container:hover .dropdown-content-dark {
-    /* display: list-item; */
-    /* flex-direction: column; */
-    display: inherit;
+    /* display: inherit; */
+    display: block;
   }
 
   .drop-container {
-      /* display: flex;  */
-      /* flex-direction: column; */
+    /* position: relative; */
   }

@@ -22,71 +22,76 @@ export default function NavBar() {
 
     return (
         <div className={navClass}>
-
-            <div className={styles.dropdown}>
-                <div className={styles["drop-container"]}>
-                    <button className={dropBtnClass}>What We Do</button>
-                    <div className={dropdownClass}>
-                        <Link href="/about/collaborations">
-                            <a>Collaborations</a>
-                        </Link>
-                        <Link href="/about/committees">
-                            <a>Committees</a>
-                        </Link>
-                        <Link href="/about/counseling">
-                            <a>Peer Counseling</a>
-                        </Link>
-                        <Link href="/about/team">
-                            <a>About Us</a>
-                        </Link>
-                    </div>
+                <div id={styles.left}>
+                    <Link href="/">
+                        <a>Mann Mukti</a>
+                    </Link>
                 </div>
-                <div className={styles["drop-container"]}>
-                    <button className={dropBtnClass}>Info</button>
-
-                    <div className={dropdownClass}>
-                        <Link href="/info/resources">
-                            <a>Resources</a>
-                        </Link>
-                        <Link href="/info/guide">
-                            <a>Guided Care</a>
-                        </Link>
-                        <Link href="/info/help">
-                            <a>Help</a>
-                        </Link>
-                        <Link href="/info/reports">
-                            <a>Data Reports</a>
-                        </Link>
+                <div id={styles.right} className={styles.dropdown}>
+                    <div className={styles["drop-container"]}>
+                        <button className={dropBtnClass}>What We Do</button>
+                        <div className={dropdownClass}>
+                            <Link href="/about/collaborations">
+                                <a>Collaborations</a>
+                            </Link>
+                            <Link href="/about/committees">
+                                <a>Committees</a>
+                            </Link>
+                            <Link href="/about/counseling">
+                                <a>Peer Counseling</a>
+                            </Link>
+                            <Link href="/about/team">
+                                <a>About Us</a>
+                            </Link>
+                        </div>
                     </div>
-                </div>
-                <div className={styles["drop-container"]}>
-                    <button className={dropBtnClass}>The Issue</button>
+                    <div className={styles["drop-container"]}>
+                        <button className={dropBtnClass}>Info</button>
 
-                    <div className={dropdownClass}>
-                        <Link href="/issue/issue">
-                            <a>At a Glance</a>
-                        </Link>
-                        <Link href="/issue/blog">
-                            <a>Blog</a>
-                        </Link>
+                        <div className={dropdownClass}>
+                            <Link href="/info/resources">
+                                <a>Resources</a>
+                            </Link>
+                            <Link href="/info/guide">
+                                <a>Guided Care</a>
+                            </Link>
+                            <Link href="/info/help">
+                                <a>Help</a>
+                            </Link>
+                            <Link href="/info/reports">
+                                <a>Data Reports</a>
+                            </Link>
+                        </div>
                     </div>
-                </div>
-                <div className={styles["drop-container"]}>
-                    <button className={dropBtnClass}>Contact</button>
+                    <div className={styles["drop-container"]}>
+                        <button className={dropBtnClass}>The Issue</button>
 
-                    <div className={dropdownClass}>
-                        <Link href="/reach/instagram">
-                            <a>Social Media</a>
-                        </Link>
-                        <Link href="/reach/contact">
-                            <a>Contact Us</a>
-                        </Link>
+                        <div className={dropdownClass}>
+                            <Link href="/issue/issue">
+                                <a>At a Glance</a>
+                            </Link>
+                            <Link href="/issue/blog">
+                                <a>Blog</a>
+                            </Link>
+                        </div>
                     </div>
+                    <div className={styles["drop-container"]}>
+                        <button className={dropBtnClass}>Contact</button>
+
+                        <div className={dropdownClass}>
+                            <Link href="/reach/instagram">
+                                <a>Social Media</a>
+                            </Link>
+                            <Link href="/reach/contact">
+                                <a>Contact Us</a>
+                            </Link>
+                        </div>
+                    </div>
+                    <Link href="/apply">
+                        <a>Join Us</a>
+                    </Link>
                 </div>
-                <Link href="/apply">
-                    <a>Join Us</a>
-                </Link>
-            </div>
+                
         </div>
 
     )
