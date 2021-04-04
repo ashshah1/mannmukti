@@ -92,7 +92,6 @@ export async function getStaticProps() {
   };
 
   // get page info
-  options.sheetNumber = parseInt(process.env.CONTACT_INDEX);
   let pageInfo;
   await GSheetReader(
       options,
