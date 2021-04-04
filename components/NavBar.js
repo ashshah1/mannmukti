@@ -14,7 +14,7 @@ export default function NavBar() {
 
     let location = router.pathname;
 
-    if (location === "/" || location === "/about/collaborations" || location === "/info/help" || location === "/reach/contact") {
+    if (location === "/" || location === "/info/help" || location === "/reach/contact") {
         navClass = styles.navbar;
         dropBtnClass = styles.dropbtn;
         dropdownClass = styles["dropdown-content"];
