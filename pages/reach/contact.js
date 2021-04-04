@@ -1,6 +1,7 @@
 import NavBar from '../../components/NavBar.js'
 import styles from '../../styles/Contact.module.css'
 import Head from "next/dist/next-server/lib/head";
+import emailjs from 'emailjs-com'
 const GSheetReader = require('g-sheets-api');
 
 export default function Contact(props) {
@@ -49,17 +50,17 @@ export default function Contact(props) {
     console.log(form);
 
 
+  // send email on form submission
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log("submitted");
-    console.log(e);
 
-    // construct email text
-    let messageInfo = "";
-    for (let i = 0; i < e.target.length - 1; i++) {
-      messageInfo += e.target[i].name + ": " + e.target[i].value + " ";
-    }
-    console.log(messageInfo)
+    emailjs.sendForm('service_q3viq0x', 'template_zvlivob', e.target, 'user_pQexe1vVDnYlIyE9wV3dV')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    e.target.reset();
   }
 
   return (

@@ -22,8 +22,12 @@ export default function NavBar() {
 
     return (
         <div className={navClass}>
-
-            <div className={styles.dropdown}>
+            <div id={styles.left}>
+                <Link href="/">
+                    <a>Mann Mukti</a>
+                </Link>
+            </div>
+            <div id={styles.right} className={styles.dropdown}>
                 <div className={styles["drop-container"]}>
                     <button className={dropBtnClass}>What We Do</button>
                     <div className={dropdownClass}>
