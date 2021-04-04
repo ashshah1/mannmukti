@@ -13,6 +13,7 @@ module.exports = {
         INSTAGRAM_PHOTOS_INDEX: process.env.INSTAGRAM_PHOTOS_INDEX,
         ISSUE_INDEX: process.env.ISSUE_INDEX,
         LANDING_INDEX: process.env.LANDING_INDEX,
+        REPORTS_INFO_INDEX: process.env.REPORTS_INFO_INDEX,
         REPORTS_INDEX: process.env.REPORTS_INDEX,
         RESOURCES_INDEX: process.env.RESOURCES_INDEX
     },

@@ -13,7 +13,7 @@ export default function Committees(props) {
             name={c.name}
             summary={c.summary}
             info={c.info}
-            filled={index % 2 == 0}
+            filled={index % 2 === 0}
           />
         );
       })
