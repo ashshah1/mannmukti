@@ -35,7 +35,7 @@ export default function Resources(props) {
             <NavBar></NavBar>
             <div className={styles.splash}>
                 <div className={styles["splash-border"]}>
-                    <a className={styles.headers}>TEXT HOME TO</a><a className={styles.number}> 741741</a>
+                    <span className={styles.headers}>TEXT HOME TO</span><span className={styles.number}> 741741</span>
                     <p>CRISIS TEXT LINE</p>
                     <p className={styles.headers}>1-800-273-8255</p>
                     <p>NATIONAL SUICIDE PREVENTION LIFELINE</p>

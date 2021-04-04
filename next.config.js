@@ -3,6 +3,7 @@ module.exports = {
         ABOUT_INDEX: process.env.ABOUT_INDEX,
         APPLY_INDEX: process.env.APPLY_INDEX,
         BLOG_INDEX: process.env.BLOG_INDEX,
+        COLLABORATIONS_INFO_INDEX: process.env.COLLABORATIONS_INFO_INDEX,
         COLLABORATIONS_INDEX: process.env.COLLABORATIONS_INDEX,
         COMMITTEES_INDEX: process.env.COMMITTEES_INDEX,
         CONTACT_INDEX: process.env.CONTACT_INDEX,

@@ -1,0 +1,34 @@
+.title {
+    color: #A37666;
+    text-align: center;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    margin-top: 4rem;
+  }
+
+  .accordion {
+      margin: 2rem;
+  }
+
+  .project {
+      text-transform: uppercase;
+      font-family: 'Montserrat';
+      padding: 1rem;
+  }
+
+  .descrip {
+    font-family: 'Montserrat';
+    padding: 1rem;
+  }
+
+  .img {
+      text-align: center;
+  }
+
+  .caption {
+      text-align: center;
+    font-style: italic;  
+}
