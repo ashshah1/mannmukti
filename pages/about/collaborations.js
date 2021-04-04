@@ -5,7 +5,7 @@ import styles from '../../styles/Collaborations.module.css'
 import Collaborator from '../../components/Collaborator.js'
 const GSheetReader = require('g-sheets-api');
 
-import { Accordion, Card, Button } from "react-bootstrap";
+import { Accordion, Card } from "react-bootstrap";
 
 export default function Collaborations(props) {
     let collabs = props.collabs
