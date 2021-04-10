@@ -1,0 +1,15 @@
+.title {
+    color: #A37666;
+    text-align: center;
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    margin-top: 4rem;
+  }
+
+  .descrip {
+      font-size: 2vw;
+      text-align: center;
+  }
