@@ -8,10 +8,14 @@ const GSheetReader = require('g-sheets-api');
 import { Accordion, Card } from "react-bootstrap";
 
 export default function Collaborations(props) {
-  console.log(props);
+  let pageText = props.pageText.map((info, i) => {
+    return (
+      <p className={styles[info.type]}>{info.text}</p>
+    )
+  });
+
     let collabs = props.collabs
         .map(function (c, index) {
-            console.log("index" + index + "; name " + c.name);
             let collabId = "collab" + index;
             return (
                 <Card key={index}>
@@ -41,8 +45,8 @@ export default function Collaborations(props) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <NavBar></NavBar>
-            <h1 className={styles.title}>Collaborations</h1>
             <div className={styles.container}>
+              {pageText}
             </div>
             <Accordion className={styles.accordion} defaultActiveKey="0">
                 {collabs}
