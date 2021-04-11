@@ -32,3 +32,8 @@
       text-align: center;
     font-style: italic;  
 }
+
+.container {
+    margin: 4rem;
+    font-size: 1.3vw;
+}
