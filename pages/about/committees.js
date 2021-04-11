@@ -5,7 +5,6 @@ import styles from '../../styles/Comm.module.css'
 const GSheetReader = require('g-sheets-api');
 
 export default function Committees(props) {
-    console.log(props.committees);
     let committees = props.committees
       .map(function(c, index) {
         return (

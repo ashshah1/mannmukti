@@ -5,7 +5,6 @@ import styles from '../../styles/Report.module.css'
 const GSheetReader = require('g-sheets-api');
 
 export default function Reports(props) {
-    console.log(props);
     let pageText = props.pageText.map((info, i) => {
       return (
         <p className={styles[info.type]}>{info.text}</p>

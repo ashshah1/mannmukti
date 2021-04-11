@@ -1,7 +1,6 @@
 import styles from "../styles/Comm.module.css"
 
 export default function Committee(props) {
-  console.log(props);
   let className = props.filled ? "committee-filled" : "committee-outlined";
   return (
     <div className={styles[className]}>

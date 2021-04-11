@@ -14,7 +14,6 @@ export default function Resources(props) {
 
     for (let i = 0; i < data.length; i++) {
         let resource = data[i];
-        console.log(resource);
         let newObj = (<div>
             <h1 className={styles.resourceHeader}>{resource.name} {resource.category}</h1>
             <p>{resource.description}</p>

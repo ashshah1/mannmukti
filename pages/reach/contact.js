@@ -30,7 +30,6 @@ export default function Contact(props) {
     .map((info, i) => {
       let label = info.text.replace(" ", "");
       if (info.type.includes("input")) {
-        console.log(info);
         let type = info.type.split("-")[1];
         return (
           <div className={styles["form-input"]}>
@@ -47,7 +46,6 @@ export default function Contact(props) {
         );
       }  
     });
-    console.log(form);
 
 
   // send email on form submission

@@ -4,7 +4,6 @@ import Head from "next/dist/next-server/lib/head";
 const GSheetReader = require('g-sheets-api');
 
 export default function Help(props) {
-  console.log(props);
   // get page text
   let pageText = props.pageText
     .filter(function(result) {

@@ -5,7 +5,6 @@ import Head from "next/dist/next-server/lib/head";
 const GSheetReader = require('g-sheets-api');
 
 export default function Instagram(props) {
-  console.log(props);
   let pageText = props.text.map((info, i) => {
     return (
       <p className={styles[info.type]}>{info.text}</p>

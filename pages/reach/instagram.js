@@ -6,7 +6,6 @@ import Head from "next/dist/next-server/lib/head";
 const GSheetReader = require('g-sheets-api');
 
 export default function Instagram(props) {
-  console.log(props);
   let posts = props.posts.map((post, i) => {
     return (
       <a key={i} className={styles["post-link"]} href={post.url} target="_blank">

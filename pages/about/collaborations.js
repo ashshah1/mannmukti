@@ -10,7 +10,6 @@ import { Accordion, Card } from "react-bootstrap";
 export default function Collaborations(props) {
     let collabs = props.collabs
         .map(function (c, index) {
-            console.log("index" + index + "; name " + c.name);
             return (
                 <Card key={index}>
                     <Accordion.Toggle as={Card.Header} eventKey={index} className={styles.project}>

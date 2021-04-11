@@ -2,7 +2,6 @@ import Image from 'next/image'
 import styles from "../styles/Profile.module.css"
 
 export default function Profile(props) {
-  console.log(props);
   return (
     <div className={styles.profile}>
       <div className={styles["profile-pic"]}>

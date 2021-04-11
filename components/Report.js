@@ -1,7 +1,6 @@
 import styles from "../styles/Report.module.css"
 
 export default function Report(props) {
-  console.log(props);
   return (
     <div className={styles.report}>
       <div className={styles.name}>{props.name}</div>

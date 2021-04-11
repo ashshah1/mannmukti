@@ -5,7 +5,7 @@ import styles from '../../styles/Team.module.css'
 const GSheetReader = require('g-sheets-api');
 
 export default function Team(props) {
-    console.log(props.team);
+    console.(props.team);
     let profiles = props.team
       .map(function(member) {
         return (
