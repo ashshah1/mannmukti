@@ -54,6 +54,7 @@ export async function getStaticProps() {
     return {
       props: {
         committees: committees
-      }
+      },
+      revalidate: 300
     }
   }

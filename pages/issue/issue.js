@@ -49,6 +49,7 @@ export async function getStaticProps() {
   return {
     props: {
       text: text,
-    }
+    },
+    revalidate: 300
   }
 }

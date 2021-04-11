@@ -105,6 +105,7 @@ export async function getStaticProps() {
   return {
     props: {
       pageInfo: pageInfo
-    }
+    },
+    revalidate: 300
   }
 }

@@ -73,6 +73,7 @@ export async function getStaticProps() {
     props: {
       posts: photos,
       pageText: pageText
-    }
+    },
+    revalidate: 300
   }
 }

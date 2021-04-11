@@ -82,6 +82,7 @@ export async function getStaticProps() {
       props: {
         pageText: pageText,
         collabs: collabs
-      }
+      },
+      revalidate: 300
     }
   }
