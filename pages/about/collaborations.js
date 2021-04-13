@@ -42,7 +42,7 @@ export default function Collaborations(props) {
         <div>
             <Head>
                 <title>Mann Mukti | Collaborations</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/images/kite-white.jpg" />
             </Head>
             <NavBar></NavBar>
             <div className={styles.container}>

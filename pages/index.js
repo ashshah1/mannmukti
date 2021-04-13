@@ -34,7 +34,7 @@ export default function Home(props) {
       
       <Head>
         <title>Mann Mukti</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/kite-white.jpg" />
       </Head>
       <div className={styles.bgWrap}>
       <Image

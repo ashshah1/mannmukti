@@ -36,7 +36,7 @@ export default function Help(props) {
     <div className={styles["full-page"]}>
       <Head>
         <title>Mann Mukti | Help</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/kite-white.jpg" />
       </Head>
       <NavBar></NavBar>
       <main>

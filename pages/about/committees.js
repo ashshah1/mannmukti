@@ -21,7 +21,7 @@ export default function Committees(props) {
         <div>
             <Head>
                 <title>Mann Mukti | Committees</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/images/kite-white.jpg" />
             </Head>
             <NavBar></NavBar>
             <h1 className={styles.title}>Committees</h1>

@@ -1,7 +1,7 @@
 import styles from '../../styles/Resources.module.css'
 const GSheetReader = require('g-sheets-api');
 import NavBar from '../../components/NavBar.js'
-
+import Head from 'next/head'
 
 export default function Resources(props) {
     let data = props.res;
@@ -31,6 +31,10 @@ export default function Resources(props) {
 
     return (
         <div className={styles["full-page"]}>
+            <Head>
+                <title>Mann Mukti | Resources</title>
+                <link rel="icon" href="/images/kite-white.jpg" />
+            </Head>
             <NavBar></NavBar>
             <div className={styles.splash}>
                 <div className={styles["splash-border"]}>

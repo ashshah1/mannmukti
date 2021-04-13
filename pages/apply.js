@@ -37,7 +37,7 @@ export default function Apply(props) {
     <div className={styles["full-page"]}>
       <Head>
         <title>Mann Mukti | Apply</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/kite-white.jpg" />
       </Head>
       <NavBar></NavBar>
       <main>

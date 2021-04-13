@@ -25,7 +25,7 @@ export default function Instagram(props) {
     <div>
       <Head>
         <title>Mann Mukti | Instagram</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/kite-white.jpg" />
       </Head>
       <NavBar/>
         <div className={styles["intro-container"]}>

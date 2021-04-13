@@ -65,7 +65,7 @@ export default function Contact(props) {
       <div className={styles["full-page"]}>
         <Head>
           <title>Mann Mukti | Contact</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/images/kite-white.jpg" />
         </Head>
         <NavBar></NavBar>
         <h1 className={styles.title}>{titleText}</h1>
