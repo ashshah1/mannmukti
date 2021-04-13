@@ -6,13 +6,12 @@
   font-weight: 700;
   margin-bottom: 0;
   letter-spacing: 0;
+  margin-top: 4rem;
 }
 
 .container {
   width: 90vw;
   margin: auto;
-  margin-top: 6vh;
-  margin-bottom: 6vh;
 }
 
 /* COMMITTEE COMPONENT */
@@ -52,7 +51,6 @@
 }
 
 .info li {
-  /* padding-left: 2vw; */
   position: relative;
   margin-left: 4vw;
   list-style: none;
@@ -68,5 +66,33 @@
   transform: rotate(45deg);
   top: .7em;
   left: -2vw;
+}
+
+@media only screen and (max-width: 775px) {
+  .committee-filled, .committee-outlined {
+    padding: 3vw;
+    margin: 2vw;
+  }
+  
+  .name {
+    font-size: 5vw;
+  }
+
+  .summary {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+
+  .info {
+    font-size: 2.5vw;
+    line-height: 1.5em;
+  }
+
+  .info li:after {
+    height: .5em;
+    width: .5em;
+    top: .5em;
+    left: -2.7vw;
+  }
 }
 

@@ -2,25 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 20vw;
+  width: 20em;
 }
 
 .profile > * {
   margin: .5vw;
 }
 
-/* .profile > * {
-  margin: auto;
-} */
 .profile-pic img {
-  /* margin: auto; */
   border-radius: 50%;
 }
 
 .name {
   font-style: normal;
   font-weight: normal;
-  font-size: 3vh;
+  font-size: 24px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -28,14 +24,14 @@
 .position {
   font-style: italic;
   font-weight: normal;
-  font-size: 2.25vh;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
 .bio {
   font-style: normal;
   font-weight: normal;
-  font-size: 2.25vh;
-  line-height: 3.5vh;
-  /* text-align: center; */
+  font-size: 16px;
+  line-height: 24px;;
+  text-align: center;
 }
