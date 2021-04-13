@@ -80,16 +80,6 @@
   color: #A77B77;
 } 
 
-.navbar-dark .dropdown a:hover {
-  background-color: #A77B77;
-  color:white;
-}
-
-.dropbtn-dark:hover {
-  background-color: #A77B77;
-  color: white;
-}
-
 /* Dropdown content (hidden by default) */
 .dropdown-content, .dropdown-content-dark {
   display: none;
