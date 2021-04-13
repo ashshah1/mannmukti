@@ -2,11 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* margin: 4vw; */
 }
 
 .container > *{
-  margin: 4vw;
+  margin: 3vw;
 }
 
 .title {
@@ -17,4 +16,5 @@
   font-weight: 700;
   margin-bottom: 0;
   letter-spacing: 0;
+  margin-top: 4rem;
 }
