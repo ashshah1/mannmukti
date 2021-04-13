@@ -31,7 +31,7 @@ export default function Reports(props) {
       <div className={styles["container"]}>
         <Head>
             <title>Mann Mukti | Reports</title>
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/images/kite-white.jpg" />
         </Head>
         <NavBar></NavBar>
         <div className={styles["intro-container"]}>
