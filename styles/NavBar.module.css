@@ -9,7 +9,6 @@
 .navbar, .navbar-dark {
   overflow: hidden;
   width: 100%;
-  /* height: 47px; */
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -33,28 +32,19 @@
 }
 
 #left {
-  /* left: 0px; */
-  /* top: 0; */
-  /* position: fixed; */
   height: inherit;
   float: left;
 }
 
 #right {
-  /* right: 0px; */
-  /* top: 0; */
-  /* position: fixed; */
   float: right;
 }
 
 /* Links inside the navbar */
 .navbar a, .navbar-dark a {
-  /* font-size: 16px; */
-  /* all: clear!; */
   text-align: center;
   padding: 1.5vh 1.5vw;
   display: block;
-  /* vertical-align: center; */
 }
 
 
