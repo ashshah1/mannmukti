@@ -71,8 +71,4 @@
     width: 100%;
     flex-direction: column;
   }
-
-  .bgText {
-    /* line-height: 1rem; */
-  }
 }
