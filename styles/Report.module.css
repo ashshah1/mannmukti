@@ -11,14 +11,14 @@
   font-weight: 700;
   margin-bottom: 0;
   letter-spacing: 0;
-
+  margin-top: 4rem;
 }
 
 .paragraph {
   font-style: normal;
   font-weight: normal;
   font-size: 1.25vw;
-  line-height: 4vh;
+  line-height: 3vw;
   background: #EFEAE8;;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 2vw;
@@ -55,23 +55,40 @@
 
 .description {
   font-size: 1.25vw;
-  line-height: 4vh;
+  line-height: 3vw;
 }
 
 .link {
   color: #A77B77;
   float: right;
+  margin-top: 1vw;
   margin-right: 1.5vw;
   font-style: italic;
   font-weight: bold;
   font-size: 1vw;
   border: 2px solid #A77B77;
   box-sizing: border-box;
-  border-radius: 10px;
-  padding: 8px;
+  border-radius: 1vw;
+  padding: 1vw;
 }
 
 .link:hover {
   background-color: #A77B77;
   color: #FFF;
+}
+
+@media only screen and (max-width: 600px) {
+  .paragraph {
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+  }
+
+  .description {
+    font-size: 2vw;
+    line-height: 3.5vw;
+  }
+
+  .link {
+    font-size: 2vw;
+  }
 }
