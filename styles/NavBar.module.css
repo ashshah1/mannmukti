@@ -7,7 +7,6 @@
 
 /* Handle navbar coloring for both themes*/  
 .navbar, .navbar-dark {
-  overflow: hidden;
   width: 100%;
   position: fixed;
   top: 0;
