@@ -16,6 +16,12 @@
   font-size: 1.4vw;
 }
 
+@media only screen and (max-width: 400px) {
+  .navbar, .navbar-dark  {
+    font-size: 2.75vw;
+  }
+}
+
 .navbar {
   color: white;
   background-color: #A77B77;
